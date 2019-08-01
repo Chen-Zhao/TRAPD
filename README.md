@@ -1,3 +1,11 @@
+This is forked from https://github.com/mhguo1/TRAPD
+
+Controls can be count within non_neuro and control subgroups.
+
+Possible to use exact sample sizes.
+
+
+
 # TRAPD
 
 
