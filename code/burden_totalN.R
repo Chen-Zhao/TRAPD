@@ -34,6 +34,12 @@ for(i in 1:nrow(dat)){
   args_casesize <- dat[i,]$CASE_COUNT_HOMW+case_count
   args_controlsize<-round(dat[i,]$CONTROL_TOTAL_ANmean/2)
 
+  if(args_casesize>args$casesize){
+     args_casesize <- args$casesize
+     dat[i,]$CASE_COUNT_HOMW <- args_casesize-case_count
+  }
+ 
+
  
   if(case_count>args_casesize){
     case_count<-args_casesize
