@@ -6,6 +6,14 @@ Possible to use exact sample sizes.
 
 working with python 3.7.3 
 
+# find bugs
+
+### find bugs
+in count_cases_totalN.py
+count_het=len(set([x for x in all_index if all_index.count(x) > 0])) -->
+count_het=len(set([x for x in het_index if het_index.count(x) > 0]))
+
+
 
 # TRAPD
 
